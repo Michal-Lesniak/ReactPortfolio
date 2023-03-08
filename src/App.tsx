@@ -5,7 +5,7 @@ import { Home } from './components/Home';
 
 function App() {
   return (
-    <div className="bg-black/95">
+    <div className="bg-site bg-cover bg-no-repeat">
       <Header/>
       <Home/>
       <div className='h-[4000px]'></div>
