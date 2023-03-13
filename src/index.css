@@ -5,6 +5,6 @@
 
 @layer base{
   .section{
-    @apply md:mt-24 mt-[50px] md:h-screen flex items-center justify-center;
+    @apply  md:h-screen flex items-center justify-center;
   }
 }

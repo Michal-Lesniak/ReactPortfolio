@@ -2,9 +2,9 @@ import Img1 from "../assets/work1.jpg";
 
 export const Work = () => {
     return (
-        <section id="work" className="pt-[50px]">
-            <div className="text-white/80 grid xl:grid-cols-2  h-full w-full">
-                <div className="grid xl:grid-cols-1 md:grid-cols-2 h-screen lg:h-fit lg:mt-20">
+        <section id="work" className="md:pt-[50px]">
+            <div className="text-white/80 grid xl:grid-cols-2  lg:h-full w-full">
+                <div className="grid xl:grid-cols-1 md:grid-cols-2 lg:h-fit lg:mt-20">
                     <div className="flex xl:col-span-3 flex-col justify-center items-center ">
                         <img className="h-[400px] w-[350px] " src={Img1} alt=""/>  
                         <button className="pt-5 text-gray hover:text-cyan">{"<Read More/>"}</button>
@@ -32,7 +32,7 @@ export const Work = () => {
                         </div>
                     </div>
                 </div>
-                <div className="grid xl:grid-cols-1 md:grid-cols-2 h-screen lg:h-fit lg:mt-20">
+                <div className="grid xl:grid-cols-1 md:grid-cols-2 lg:h-fit lg:mt-20 mt-20">
                     <div className="flex xl:col-span-3 flex-col justify-center items-center ">
                         <img className="h-[400px] w-[350px] " src={Img1} alt=""/>  
                         <button className="pt-5 text-gray hover:text-cyan">{"<Read More/>"}</button>
@@ -60,9 +60,6 @@ export const Work = () => {
                         </div>
                     </div>
                 </div>
-                
-             
-                
             </div>
         </section>
     );   

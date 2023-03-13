@@ -1,16 +1,27 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import { About } from './components/About';
 import { Contact } from './components/Contact';
 import { Header } from './components/Header';
-import { Home } from './components/Home';
 import { Work } from './components/Work';
 
 function App() {
+
+  const [isHovered, setIsHovered] = useState(false);
+  
+  const handleMouseEnter = () =>{
+      setIsHovered(true);
+  }
+  
+  const handleMouseLeave = () =>{
+      setIsHovered(false);
+  }
+
+
   return (
     <div className="bg-black font-bold">
-      <Header/>
-      <About/>
+      <Header handleMouseEnter={handleMouseEnter} handleMouseLeave={handleMouseLeave}/>
+      <About isHovered={isHovered}/>
       <Work/>
       <Contact/>
     </div>
