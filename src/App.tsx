@@ -1,14 +1,18 @@
 import React from 'react';
 import './App.css';
+import { About } from './components/About';
+import { Contact } from './components/Contact';
 import { Header } from './components/Header';
 import { Home } from './components/Home';
+import { Work } from './components/Work';
 
 function App() {
   return (
-    <div className="bg-site bg-cover bg-no-repeat">
+    <div className="bg-black font-bold">
       <Header/>
-      <Home/>
-      <div className='h-[4000px]'></div>
+      <About/>
+      <Work/>
+      <Contact/>
     </div>
   );
 }
