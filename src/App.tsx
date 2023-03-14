@@ -1,27 +1,25 @@
-import React, {useState} from 'react';
+import React, {useEffect} from 'react';
 import './App.css';
 import { About } from './components/About';
 import { Contact } from './components/Contact';
 import { Header } from './components/Header';
 import { Work } from './components/Work';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
 
-  const [isHovered, setIsHovered] = useState(false);
-  
-  const handleMouseEnter = () =>{
-      setIsHovered(true);
-  }
-  
-  const handleMouseLeave = () =>{
-      setIsHovered(false);
-  }
+  useEffect(() => {
+    AOS.init({
+      duration : 2000
+    });
+  }, []); 
 
 
   return (
     <div className="bg-black font-bold">
-      <Header handleMouseEnter={handleMouseEnter} handleMouseLeave={handleMouseLeave}/>
-      <About isHovered={isHovered}/>
+      <Header/>
+      <About/>
       <Work/>
       <Contact/>
     </div>

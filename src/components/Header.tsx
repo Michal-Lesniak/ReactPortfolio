@@ -10,8 +10,8 @@ export const Header = (props:any) => {
 
   
     return (
-        <div onMouseEnter={props.handleMouseEnter} onMouseLeave={props.handleMouseLeave} className="sticky top-0 group w-full h-full">
-            <div className="hidden group-hover:flex justify-center md:justify-between items-center text-white bg-neutral-800 py-3 md:py-8 lg:text-xl m-auto shadow-lg">
+        <div className="sticky top-0 group w-full h-full">
+            <div className="hidden group-hover:flex justify-center md:justify-between items-center text-white bg-neutral-800 py-3 md:py-5 lg:text-xl m-auto shadow-lg">
                 <div className="text-cyan hidden md:flex px-10 text-3xl font-extrabold text-center text-shadow">
                     Michał Leśniak 
                 </div>

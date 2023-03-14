@@ -16,7 +16,7 @@ function ContactForm() {
   };
 
   return (
-         <form onSubmit={handleSubmit} className="max-w-md mx-auto my-[80px]">
+         <form data-aos="fade-up" onSubmit={handleSubmit} className="m-[1rem] md:my-[5rem] border rounded p-12 sm:w-[500px] ">
       <div className="mb-4">
         <label htmlFor="name" className="block font-bold mb-2">
           Name:
@@ -26,7 +26,7 @@ function ContactForm() {
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+          className="bg-transparent border-b focus:border-b-cyan w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
           required
         />
       </div>
@@ -40,7 +40,7 @@ function ContactForm() {
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+          className="bg-transparent appearance-none border-b focus:border-b-cyan w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
           required
         />
       </div>
@@ -53,7 +53,9 @@ function ContactForm() {
           id="message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          className="apperance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+          className="bg-transparent border-b py-2 px-3 outline-none w-full
+                        placeholder:text-white focus:border-cyan transition-all
+                        resize-none mb-12"
           rows={5}
           required
         ></textarea>
